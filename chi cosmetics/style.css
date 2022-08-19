@@ -28,7 +28,7 @@ header{
     justify-content: space-between;
     position: fixed;
     z-index: 10000;
-    background: transparent;
+    background: #f7dcb1;
 }
 
 .header-location{
@@ -253,8 +253,8 @@ p{
     background: linear-gradient(
         to bottom,
      #f7dcb1 0%,
-     #f7dcb1 50%,
-     #fff 50%,
+     #f7dcb1 70%,
+     #fff 70%,
      #fff 100%
      );
 }

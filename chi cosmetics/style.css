@@ -404,7 +404,7 @@ button:hover{
 }
 
 svg{
-  viewport-fit: 0 0 35 35;
+/*   viewport-fit: 0 0 35 35; */
   height: 35px;
   width: 35px;
 }

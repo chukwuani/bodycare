@@ -44,7 +44,7 @@ header{
 } */
 
 
-body{
+.hero{
     background: linear-gradient(
         to left,
      #f7dcb1 0%,
@@ -249,7 +249,7 @@ p{
     flex-direction: column-reverse;
   }
 
-  body{
+  .hero{
     background: linear-gradient(
         to bottom,
      #f7dcb1 0%,
@@ -307,6 +307,7 @@ p{
   align-items: center;
   /* justify-content: center; */
   margin-left: 0rem;
+  margin-bottom: 50px
   color: #000;
   text-decoration: none;
   font-family: 'Offside', cursive;font-family: 'Offside', cursive;

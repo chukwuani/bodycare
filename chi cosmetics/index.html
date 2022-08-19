@@ -37,15 +37,15 @@
             <h2 class="form-header">Subscribe To Our Mailing List</h2>
 
             <p class="form-sub">Get 20% discount when we launch by subscribing to our mailing list !!!</p>
-            <form action="" method="post">
+            <form name="contact" data-netlify="true" method="post" onsubmit="submit">
                 <label for="">Name</label>
-                <input type="text">
+                <input type="text" name="name">
 
                 <label for="">Email</label>
-                <input type="email">
+                <input type="email" name="email">
 
                 <label for="">Phone Number</label>
-                <input type="tel">
+                <input type="tel" name="number">
 
                 <button type="submit">Submit</button>
             </form>

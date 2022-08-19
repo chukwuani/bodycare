@@ -20,6 +20,9 @@
     padding-top: 1rem;
 }
 
+.site{
+    text-decoration: underline;
+
 header{
     display: flex;
     height: 4rem;

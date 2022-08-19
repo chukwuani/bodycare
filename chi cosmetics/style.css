@@ -37,6 +37,12 @@ header{
     line-height: 1.2rem;
 }
 
+svg{
+  viewport-fit: 0 0 35 35;
+  height: 40px;
+  width: 40px;
+}
+
 
 body{
     background: linear-gradient(

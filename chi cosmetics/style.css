@@ -28,7 +28,7 @@ header{
     justify-content: space-between;
     position: fixed;
     z-index: 10000;
-    background: #f7dcb1;
+    background: transparent;
 }
 
 .header-location{
@@ -242,8 +242,16 @@ p{
 
 @media screen and (max-width: 540px) {
   header{
-    position: static;
-  }
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10000;
+    background: #f7dcb1;
+    postion: static
+}
 
   .hero{
     flex-direction: column-reverse;

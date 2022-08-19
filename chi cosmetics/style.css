@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#f7dcb1;
+}
+
+.header{
+    color: #000;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    font-family: 'Sacramento', cursive;
+    padding-top: 1rem;
+}
+
+header{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10000;
+    background: transparent;
+}
+
+.header-location{
+    font-size: .8rem;
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.2rem;
+}
+
+
+body{
+    background: linear-gradient(
+        to left,
+     #f7dcb1 0%,
+     #f7dcb1 50%,
+     #fff 50%,
+     #fff 100%
+     );
+}
+
+span{
+  color: #EFCC95;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  width: 50vw;
+  height: 100vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 15rem; */
+}
+
+.side-content{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  width: 50vw;
+  height: 100vh;
+}
+
+.form-header{
+  font-size: 2rem;
+  font-family: 'Offside', cursive;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+  font-weight: 500;
+}
+
+.form-sub{
+  font-size: 1.1rem;
+  font-family: 'Offside', cursive;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  font-weight: 100;
+}
+
+input{
+  margin-bottom: 10px;
+  height: 50px;
+  border: transparent;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 0.5rem 1rem;
+  outline: none;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+label{
+  margin-left: 5rem;
+  font-size: .9rem;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+}
+   
+button{
+  display: inline-block;
+  padding: 9px 30px;
+  background: #EFCC95;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-size: 2.5rem; 
+  font-weight: 500;
+  transition: ease .50s;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  animation: squish 1s alternate ease-in-out infinite;
+}
+
+@keyframes squish{
+  25%{transform: 
+      scale(0.8,1.1);}
+}
+
+button:hover{
+  transform: scale(1.1);
+  background: var(--main-color);
+}
+
+.description{
+  text-align: center;
+}
+
+.cta{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  /* margin-left: 5rem; */
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+}
+
+.cta-sub{
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-weight: 100;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-size: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  line-height: 1.7rem;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.place{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 5rem;
+  font-family: 'Offside', cursive;
+  color: #000;
+}
+
+.phone{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 5rem;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  color: #000;
+}
+
+.email{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 5rem;
+  margin-top: 6px;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+}
+
+p{
+  color: #000;
+}
+
+.header-location{
+  font-family: 'Offside', cursive;
+  font-size: 1rem;
+}
+
+.map{
+  width: 40px;
+  height: 40px;
+}
+
+.contact-socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.contact-socials a{
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 540px) {
+  header{
+    position: static;
+  }
+
+  .hero{
+    flex-direction: column-reverse;
+  }
+
+  body{
+    background: linear-gradient(
+        to bottom,
+     #f7dcb1 0%,
+     #f7dcb1 50%,
+     #fff 50%,
+     #fff 100%
+     );
+}
+
+.cta-sub{
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-weight: 300;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-size: 1rem;
+  font-weight: 100;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* position: relative;
+  bottom: 0; */
+  align-items: center;
+  justify-content: center;
+}
+
+.place{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 0rem;
+}
+
+.phone{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 0rem;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+}
+
+.email{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 0rem;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+}
+
+.form-header{
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 0rem;
+  font-weight: 500;
+}
+
+.form-sub{
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 100;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  margin-bottom: 2rem;
+  margin-left: 0rem;
+}
+
+input{
+  margin-bottom: 10px;
+  height: 50px;
+  border: transparent;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 0.5rem 1rem;
+  outline: none;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  width: 80vw;
+  align-self: center;
+  position: relative;
+}
+
+label{
+  margin-left: 0rem;
+  font-size: .9rem;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  position: relative;
+  left: -60px;
+}
+   
+button{
+  display: inline-block;
+  padding: 9px 30px;
+  background: #EFCC95;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-size: 1.7rem; 
+  font-weight: 300;
+  transition: ease .50s;
+  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 80vw;
+  align-self: center;
+}
+
+button:hover{
+  transform: scale(1.1);
+  background: var(--main-color);
+}
+
+.side-content{
+  height: auto;
+}
+
+.form-container{
+  height: auto;
+  margin-bottom: 1.9rem;
+  position: relative;
+}
+
+.contact-socials{
+  position: absolute;
+  bottom: 0;
+  top: 1836px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 15px;
+  right: 15px;
+}
+
+.contact-socials a{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+svg{
+  viewport-fit: 0 0 35 35;
+  height: 35px;
+  width: 35px;
+}
+
+body{
+  position: relative;
+}
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
 
 *{
@@ -12,6 +14,10 @@
     --main-color:#f7dcb1;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 .header{
     color: #000;
     font-size: 1.5rem;
@@ -21,7 +27,7 @@
 }
 
 .site {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #000;
 }
 
@@ -33,6 +39,7 @@ header{
     justify-content: space-between;
     z-index: 10000;
     background: transparent;
+    position: relative;
 }
 
 .header-location{
@@ -67,21 +74,27 @@ span{
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .form-container{
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  /* justify-content: center; */
   width: 50vw;
-  height: 100vh;
 }
 
 form{
   display: flex;
   flex-direction: column;
   /* margin-top: 15rem; */
+  width: 660px;
+  height: auto;
 }
 
 .side-content{
@@ -90,59 +103,68 @@ form{
   /* align-items: center;
   justify-content: center; */
   width: 50vw;
-  height: 100vh;
 }
 
 .form-header{
-  font-size: 2rem;
-  font-family: 'Offside', cursive;
-  margin-top: 5rem;
+  font-size: 1.7rem;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 9rem;
   margin-bottom: 3rem;
-  margin-left: 5rem;
-  font-weight: 500;
+  margin-left: 0;
+  font-weight: 100;
+  text-align: center;
 }
 
 .form-sub{
-  font-size: 1.1rem;
-  font-family: 'Offside', cursive;
-  margin-bottom: 2rem;
-  margin-left: 5rem;
+  font-size: 1rem;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 5rem;
+  margin-left: 0;
   font-weight: 100;
+  text-align: center;
+  width: 40ch;
+  line-height: 2;
 }
 
 input{
   margin-bottom: 10px;
-  height: 50px;
+  height: 70px;
   border: transparent;
   border-bottom: 1px solid #bfbfbf;
   padding: 0.5rem 1rem;
   outline: none;
   margin-left: 5rem;
   margin-right: 5rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1rem;
 }
 
 label{
   margin-left: 5rem;
-  font-size: .9rem;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-size: .8rem;
+  margin-top: .5rem;
+  font-family: 'Comfortaa', cursive;
 }
    
 button{
   display: inline-block;
-  padding: 9px 30px;
+  padding: 9px 25px;
   background: #EFCC95;
   border: none;
   border-radius: 10px;
   letter-spacing: 1px;
-  font-size: 2.5rem; 
-  font-weight: 500;
+  font-size: 1.5rem; 
+  font-weight: 100;
   transition: ease .50s;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
   margin-left: 5rem;
   margin-right: 5rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
-  animation: squish 1s alternate ease-in-out infinite;
+  /* animation: squish 1s alternate ease-in-out infinite; */
+  width: 250px;
+  height: 70px;
+  cursor: pointer;
 }
 
 @keyframes squish{
@@ -151,7 +173,6 @@ button{
 }
 
 button:hover{
-  transform: scale(1.1);
   background: var(--main-color);
 }
 
@@ -163,20 +184,23 @@ button:hover{
   margin-top: 5rem;
   margin-bottom: 3rem;
   /* margin-left: 5rem; */
-  font-weight: 500;
-  font-size: 3rem;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-weight: 100;
+  font-size: 2.8rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.5;
 }
 
 .cta-sub{
-  margin-bottom: 2rem;
-  margin-top: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
   font-weight: 100;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
-  font-size: 1rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 0.9rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
 }
 
 .location{
@@ -191,8 +215,9 @@ button:hover{
   align-items: center;
   /* justify-content: center; */
   margin-left: 5rem;
-  font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
   color: #000;
+  font-weight: 100;
 }
 
 .phone{
@@ -203,8 +228,10 @@ button:hover{
   margin-left: 5rem;
   color: #000;
   text-decoration: none;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
   color: #000;
+  font-weight: 100;
+  /* text-decoration: underline; */
 }
 
 .email{
@@ -215,8 +242,9 @@ button:hover{
   margin-left: 5rem;
   margin-top: 6px;
   color: #000;
-  text-decoration: underline;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  /* text-decoration: underline; */
+  font-family: 'Comfortaa', cursive;
+  font-weight: 100;
 }
 
 p{
@@ -224,7 +252,7 @@ p{
 }
 
 .header-location{
-  font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 1rem;
 }
 
@@ -245,6 +273,7 @@ p{
 }
 
 @media screen and (max-width: 540px) {
+
   header{
     display: flex;
     height: 4rem;
@@ -257,6 +286,7 @@ p{
 
   .hero{
     flex-direction: column-reverse;
+    gap: 0;
   }
 
   .hero{
@@ -269,17 +299,26 @@ p{
      );
 }
 
+.cta{
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  line-height: 1.7;
+}
+
 .cta-sub{
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-top: 3rem;
   font-weight: 300;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
-  font-size: 1rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 0.85rem;
   font-weight: 100;
-  padding-left: 0rem;
-  padding-right: 0rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   text-align: center;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .location{
@@ -290,6 +329,7 @@ p{
   bottom: 0; */
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .place{
@@ -308,7 +348,7 @@ p{
   margin-left: 0rem;
   color: #000;
   text-decoration: none;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 .email{
@@ -320,32 +360,39 @@ p{
   margin-bottom: 50px
   color: #000;
   text-decoration: none;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 .form-header{
-  font-size: 2rem;
+  font-size: 1.85rem;
   text-align: center;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
-  margin-top: 3rem;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 6rem;
   margin-bottom: 3rem;
   margin-left: 0rem;
-  font-weight: 500;
+  font-weight: 100;
+  line-height: 1.7;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .form-sub{
   text-align: center;
   font-size: 1rem;
-  line-height: 1.7rem;
+  line-height: 2.3rem;
   font-weight: 100;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
-  margin-bottom: 2rem;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 5rem;
   margin-left: 0rem;
 }
 
+form{
+  width: auto;
+}
+
 input{
-  margin-bottom: 10px;
-  height: 50px;
+  margin-bottom: 50px;
+  height: 70px;
   border: transparent;
   border-bottom: 1px solid #bfbfbf;
   padding: 0.5rem 1rem;
@@ -355,63 +402,70 @@ input{
   width: 80vw;
   align-self: center;
   position: relative;
+  font-size: 1rem;
 }
 
 label{
   margin-left: 0rem;
   font-size: .9rem;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
   position: relative;
-  left: -60px;
+  /* left: -60px; */
 }
    
 button{
   display: inline-block;
-  padding: 9px 30px;
+  padding: 9px 25px;
   background: #EFCC95;
   border: none;
   border-radius: 10px;
   letter-spacing: 1px;
-  font-size: 1.7rem; 
+  font-size: 1.3rem; 
   font-weight: 300;
   transition: ease .50s;
-  font-family: 'Offside', cursive;font-family: 'Offside', cursive;
+  font-family: 'Comfortaa', cursive;
   margin-left: 0rem;
   margin-right: 0rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 80vw;
+  width: 250px;
   align-self: center;
 }
 
 button:hover{
-  transform: scale(1.1);
   background: var(--main-color);
 }
 
 .side-content{
   height: auto;
+  width: 100vw;
+  background: #f7dcb1 ;
 }
 
 .form-container{
-  height: auto;
+  height: 100vh;
   margin-bottom: 1.9rem;
   position: relative;
+  width: 100vw;
 }
 
 .contact-socials{
-  position: absolute;
+  position: relative;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 15px;
-  right: 15px;
+  /* left: 15px;
+  right: 15px; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact-socials a{
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 svg{
@@ -423,4 +477,5 @@ svg{
 body{
   position: relative;
 }
+
 }

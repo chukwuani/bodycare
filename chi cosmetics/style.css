@@ -290,13 +290,13 @@ p{
   }
 
   .hero{
-    background: linear-gradient(
+    /* background: linear-gradient(
         to bottom,
      #f7dcb1 0%,
      #f7dcb1 55%,
      #fff 55%,
      #fff 100%
-     );
+     ); */
 }
 
 .cta{
